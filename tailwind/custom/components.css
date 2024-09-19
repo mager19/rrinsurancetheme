@@ -1,0 +1,14 @@
+.btn {
+	a {
+		@apply text-white border-2 bg-rrRed border-rrRed;
+
+		padding: 1em 0.75em !important;
+		border-radius: 0.2em;
+		transition: all 0.3s ease-in-out;
+		z-index: 99999;
+
+		&:hover {
+			@apply bg-transparent border-2 border-rrRed;
+		}
+	}
+}

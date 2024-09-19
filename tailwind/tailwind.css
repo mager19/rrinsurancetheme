@@ -15,6 +15,7 @@
  */
 @import "tailwindcss/base";
 @import "./custom/base.css";
+@import "./custom/components.css";
 
 /**
  * This injects Tailwind's component classes and any component classes

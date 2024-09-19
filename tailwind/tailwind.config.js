@@ -19,6 +19,22 @@ module.exports = {
 			container: {
 				center: true,
 			},
+			colors: {
+				rrRed: '#fc1a12'
+			},
+			fontFamily: {
+				base: ["Work Sans", "system-ui"]
+			},
+			sizes: {
+				'display-1': ['91px', { fontFamily: 'base', lineHeight: '1.2', tracking: '-1.5px' }],
+				'display-2': ['81px', { fontFamily: 'base', lineHeight: '1.2', tracking: '-1.5px' }],
+				'title-1': ['58px', { fontFamily: 'base', lineHeight: '1.2' }],
+				'title-2': ['48px', { fontFamily: 'base', lineHeight: '1.2' }],
+				'title-3': ['38px', { fontFamily: 'base', lineHeight: '1.2' }],
+				'title-4': ['28px', { fontFamily: 'base', lineHeight: '1.4' }],
+				'title-5': ['22px', { fontFamily: 'base', lineHeight: '1.4' }],
+				'title-6': ['18px', { fontFamily: 'base', lineHeight: '1.4', letterSpacing: '-0.5px' }],
+			}
 		},
 	},
 	corePlugins: {
