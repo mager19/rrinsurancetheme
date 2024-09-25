@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "rrinsurance/team-members",
+	"version": "0.1.0",
+	"title": "Team members",
+	"category": "rrinsurance-blocks",
+	"icon": "smiley",
+	"description": "Team members block",
+	"attributes": {
+		"title":{
+			"type": "string",
+			"default": "Our team"
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "Meet our experts"
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "rrinsurance",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

@@ -11,4 +11,121 @@
 			@apply bg-transparent border-2 border-rrRed;
 		}
 	}
+
+	&.btn--primary {
+		a {
+			@apply text-white uppercase border-2 bg-rrRed border-rrRed;
+
+			padding: 1em 2em !important;
+			border-radius: 0.2em;
+			transition: all 0.3s ease-in-out;
+			z-index: 99999;
+
+			&:hover {
+				@apply bg-white border-2 text-rrRed border-rrRed;
+			}
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply relative z-50 mb-3 font-base;
+}
+
+.sectionTitle {
+	@apply relative inline-flex;
+	&:after {
+		@apply absolute h-3 bg-opacity-40 bottom-2 left-1 bg-rrRed;
+		content: "";
+		display: block;
+		width: 105%;
+	}
+
+	&--dark {
+		@apply text-white;
+	}
+}
+
+h1 {
+	@apply text-title-1;
+}
+
+h2 {
+	@apply text-title-2;
+}
+
+h3 {
+	@apply text-title-3;
+}
+
+h4 {
+	@apply text-title-4;
+}
+h5 {
+	@apply text-title-5;
+}
+
+h6 {
+	@apply text-title-6;
+}
+
+p {
+	@apply mb-4;
+}
+
+.customSection {
+	@apply px-4 py-8 lg:py-12;
+}
+
+.customGrid {
+	@apply gap-4 lg:gap-6;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"image1 image1 image3 image3"
+		"image2 image2 image3 image3";
+
+	.image1 {
+		grid-area: image1;
+	}
+	.image2 {
+		grid-area: image2;
+	}
+	.image3 {
+		grid-area: image3;
+	}
+
+	img {
+		@apply object-cover w-full h-full;
+	}
+}
+
+.team__members {
+	&__item {
+		.overlay {
+			@apply absolute inset-0 h-0 bg-black bg-opacity-30;
+			transition: all 0.7s ease-in-out;
+		}
+
+		&:hover {
+			.overlay {
+				@apply h-full;
+			}
+
+			.content {
+				@apply opacity-100;
+			}
+		}
+
+		.content {
+			@apply lg:opacity-40;
+			transition: all 1.2s ease-in-out;
+		}
+	}
 }

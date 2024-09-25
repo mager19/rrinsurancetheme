@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rrinsurance/dynamic-listing",
+  "version": "0.1.0",
+  "title": "Dynamic Listing",
+  "category": "rrinsurance-blocks",
+  "icon": "smiley",
+  "description": "A dynamic listing block that can be used to display posts, pages, or custom post types.",
+  "example": {},
+  "attributes": {
+    "selectedPostType": {
+      "type": "string",
+      "default": "post"
+    },
+    "postsToShow": {
+      "type": "number",
+      "default": 5
+    },
+    "showCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "selectCard": {
+      "type": "string",
+      "default": "blog-card"
+    },
+    "showHeader": {
+      "type": "boolean",
+      "default": true
+    },
+    "headerText": {
+      "type": "string",
+      "default": "Our products title"
+    },
+    "description": {
+      "type": "string",
+      "default": "Our products description Intro text Lorem ipsum dolor sit amed Lorem ipsum dolor sit amed Lorem ipsum dolor sit amed Lorem ipsum dolor sit amed"
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "url": "https://via.placeholder.com/644?text=Image",
+        "alt": "placeholder"
+      }
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "mijobrands",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

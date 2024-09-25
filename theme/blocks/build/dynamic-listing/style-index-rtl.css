@@ -1,0 +1,392 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/dynamic-listing/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-mijobrands-dynamic-listing{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 1024px){
+  .wp-block-mijobrands-dynamic-listing{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.wp-block-mijobrands-dynamic-listing {
+  overflow-x: hidden;
+}
+.wp-block-mijobrands-dynamic-listing .listingSlider{
+  padding-bottom: 3rem;
+}
+.wp-block-mijobrands-dynamic-listing .content__cta{
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 1024px){
+  .wp-block-mijobrands-dynamic-listing .content__cta{
+    padding-top: 0px;
+  }
+}
+.wp-block-mijobrands-dynamic-listing .content__cta {
+  position: relative;
+}
+.wp-block-mijobrands-dynamic-listing .content__cta:before {
+  background-color: #F57F43;
+  content: "";
+  display: block;
+  height: 64px;
+  width: 16px;
+  position: absolute;
+  transform: skew(-15deg, 0);
+  top: 0;
+  right: 30px;
+}
+@media (min-width: 1024px) {
+  .wp-block-mijobrands-dynamic-listing .content__cta:before {
+    height: 64px;
+    width: 16px;
+    top: 0;
+    right: 0px;
+  }
+}
+.wp-block-mijobrands-dynamic-listing .content__cta .cta__title{
+  margin-top: 0px;
+  padding-right: 4rem;
+  font-weight: 400;
+}
+@media (min-width: 1024px){
+  .wp-block-mijobrands-dynamic-listing .content__cta .cta__title{
+    margin-top: 0.25rem;
+    padding-right: 0px;
+  }
+}
+.wp-block-mijobrands-dynamic-listing .wp-block-button__link{
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  border-radius: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px){
+  .wp-block-mijobrands-dynamic-listing .wp-block-button__link{
+    gap: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+.wp-block-mijobrands-dynamic-listing .wp-block-button__link {
+  background-color: transparent;
+  border: 1px solid #F57F43;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.wp-block-mijobrands-dynamic-listing .wp-block-button__link:hover {
+  background-color: #F57F43;
+}
+.item-blog{
+  display: flex;
+  cursor: pointer;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  height: 280px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.item-blog .content{
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+}
+.item-blog .content .link {
+  color: #F57F43;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.item-blog:hover {
+  transform: scale(1.1);
+}
+.item-product{
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 320px;
+}
+.item-product .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item-product .content img{
+  margin: 0px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.item-product .product__title {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  display: none;
+  float: right;
+  overflow: hidden;
+  height: 100%;
+  min-height: 1px;
+}
+[dir=rtl] .slick-slide {
+  float: left;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+  right: -25px;
+  background-image: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2722%27 viewBox=%270 0 12 22%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M10.9586 21L1.87106 12.9532C0.652004 11.7342 0.759845 10.1212 1.89927 8.98178L10.9584 1%27 stroke=%27%23F57F43%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-prev:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2722%27 viewBox=%270 0 12 22%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M10.9586 21L1.87106 12.9532C0.652004 11.7342 0.759845 10.1212 1.89927 8.98178L10.9584 1%27 stroke=%27%23F57F43%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+[dir=rtl] .slick-prev {
+  left: -25px;
+  right: auto;
+}
+.slick-prev:before {
+  content: "";
+}
+[dir=rtl] .slick-prev:before {
+  content: "";
+}
+.slick-next {
+  left: -25px;
+  background-image: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2722%27 viewBox=%270 0 12 22%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M1 1L10.0876 9.04678C11.3066 10.2658 11.1988 11.8788 10.0594 13.0182L1.00022 21%27 stroke=%27%23F57F43%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-next:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2722%27 viewBox=%270 0 12 22%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M1 1L10.0876 9.04678C11.3066 10.2658 11.1988 11.8788 10.0594 13.0182L1.00022 21%27 stroke=%27%23F57F43%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+[dir=rtl] .slick-next {
+  left: auto;
+  right: -25px;
+}
+.slick-next:before {
+  content: "";
+}
+[dir=rtl] .slick-next:before {
+  content: "";
+}
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 36px;
+  line-height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #D9D9D9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #F57F43;
+}

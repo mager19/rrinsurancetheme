@@ -12,6 +12,8 @@ module.exports = {
 		// Ensure changes to PHP files trigger a rebuild.
 		'./theme/**/*.php',
 		'!./node_modules/**/*.{html,js,php}',
+		'./theme/blocks/src/**/*.js',
+		'./theme/blocks/build/**/*.js',
 	],
 	theme: {
 		// Extend the default Tailwind theme.
@@ -20,20 +22,25 @@ module.exports = {
 				center: true,
 			},
 			colors: {
-				rrRed: '#fc1a12'
+				rrRed: '#fc1a12',
+				gray: {
+					500: '#f9f9f9',
+					900: '#343837',
+				}
 			},
 			fontFamily: {
 				base: ["Work Sans", "system-ui"]
 			},
-			sizes: {
-				'display-1': ['91px', { fontFamily: 'base', lineHeight: '1.2', tracking: '-1.5px' }],
-				'display-2': ['81px', { fontFamily: 'base', lineHeight: '1.2', tracking: '-1.5px' }],
-				'title-1': ['58px', { fontFamily: 'base', lineHeight: '1.2' }],
-				'title-2': ['48px', { fontFamily: 'base', lineHeight: '1.2' }],
-				'title-3': ['38px', { fontFamily: 'base', lineHeight: '1.2' }],
-				'title-4': ['28px', { fontFamily: 'base', lineHeight: '1.4' }],
-				'title-5': ['22px', { fontFamily: 'base', lineHeight: '1.4' }],
-				'title-6': ['18px', { fontFamily: 'base', lineHeight: '1.4', letterSpacing: '-0.5px' }],
+			fontSize: {
+				'display-1': ['91px', { lineHeight: '1.2', tracking: '-1.5px' }],
+				'display-2': ['81px', { lineHeight: '1.2', tracking: '-1.5px' }],
+				'title-1': ['58px', { lineHeight: '1.2' }],
+				'title-2': ['48px', { lineHeight: '1.2' }],
+				'title-3': ['38px', { lineHeight: '1.2' }],
+				'title-4': ['28px', { lineHeight: '1.2' }],
+				'title-5': ['22px', { lineHeight: '1.4' }],
+				'title-6': ['18px', { lineHeight: '1.4', letterSpacing: '-0.5px' }],
+				'base': ['16px', { lineHeight: '1.6' }],
 			}
 		},
 	},

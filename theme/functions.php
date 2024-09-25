@@ -84,6 +84,7 @@ if (! function_exists('rrinsurancegroup_setup')) :
 			array(
 				'menu-1' => __('Primary', 'rrinsurancegroup'),
 				'menu-2' => __('Footer Menu', 'rrinsurancegroup'),
+				'menu-3' => __('Footer Menu2', 'rrinsurancegroup'),
 			)
 		);
 
@@ -119,6 +120,7 @@ if (! function_exists('rrinsurancegroup_setup')) :
 
 		// Remove support for block templates.
 		remove_theme_support('block-templates');
+		add_theme_support('custom-spacing');
 	}
 endif;
 add_action('after_setup_theme', 'rrinsurancegroup_setup');
@@ -207,3 +209,19 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+
+add_action('init', function () {
+	add_filter('block_categories_all', function ($categories) {
+		array_unshift($categories, [
+			"slug" => "rrinsurance-blocks",
+			"title" => "RRInsurance Blocks",
+		]);
+		return $categories;
+	});
+
+	$blocks = glob(__DIR__ . '/blocks/build/*/block.json');
+	foreach ($blocks as $block) {
+		register_block_type($block);
+	}
+});

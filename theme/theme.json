@@ -5,6 +5,16 @@
 		"color": {
 			"palette": [
 				{
+					"slug": "gray-500",
+					"color": "#f9f9f9",
+					"name": "gray 500"
+				},
+				{
+					"slug": "gray-900",
+					"color": "#343837",
+					"name": "gray 900"
+				},
+				{
 					"slug": "background",
 					"color": "#ffffff",
 					"name": "Background"
@@ -32,7 +42,7 @@
 			]
 		},
 		"layout": {
-			"contentSize": "40rem",
+			"contentSize": "1280px",
 			"wideSize": "60rem"
 		}
 	}
