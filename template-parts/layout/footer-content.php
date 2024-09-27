@@ -24,9 +24,7 @@
 					</a>
 				<?php
 				}
-				?>
 
-				<?php
 				$facebook = get_field('facebook_link', 'option');
 				$instagram = get_field('instagram_link', 'option');
 				$twitter = get_field('x_link', 'option');
