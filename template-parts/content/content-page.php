@@ -13,7 +13,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	$shortcode = get_field('slider_shortcode', 'option');
-	if ($shortcode) {
+	if ($shortcode && is_front_page()) {
 		echo do_shortcode($shortcode);
 	}
 	?>
