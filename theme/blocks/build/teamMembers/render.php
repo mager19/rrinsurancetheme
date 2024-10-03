@@ -18,12 +18,12 @@ if ($loop->have_posts()) : ?>
 	<div <?php echo $block_wrapper_attributes; ?>>
 		<div class="container">
 			<div class="flex flex-col items-center justify-center w-full mx-auto text-center lg:w-8/12">
-				<p class="mb-0 text-base text-white">
+				<h4 class="mb-0 text-white text-title-3 lg:text-title-2 sectionTitle">
 					<?php echo $attributes['subtitle'] ? $attributes['subtitle'] : 'Meet our experts'; ?>
-				</p>
-				<h4 class="prose-2xl text-white uppercase text-title-3 sectionTitle">
-					<?php echo $attributes['title'] ? $attributes['title']  :  'Our Team'; ?>
 				</h4>
+				<p class="prose-2xl text-white uppercase text-title-6">
+					<?php echo $attributes['title'] ? $attributes['title']  :  'Get to Know Us'; ?>
+				</p>
 			</div>
 
 			<div class="flex flex-wrap justify-center gap-4 mt-4 lg:gap-8 lg:mt-7">
@@ -37,7 +37,7 @@ if ($loop->have_posts()) : ?>
 							</div>
 							<div class="absolute px-4 content bottom-5 left-2">
 								<h4 class="mt-4 text-white text-title-4 item__name"><?php the_title(); ?></h4>
-								<p class="mt-2 text-sm text-white uppercase item__position"><?php the_field('position'); ?></p>
+								<p class="mt-2 text-sm text-white uppercase item__position"><?php echo wp_kses_post(get_field('position')); ?></p>
 							</div>
 						</a>
 					</div>

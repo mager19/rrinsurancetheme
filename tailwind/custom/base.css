@@ -263,7 +263,7 @@ body {
 }
 
 .hero__page__title {
-	animation-duration: 5s;
+	animation-duration: 6s;
 	animation-name: growshrink;
 	animation-iteration-count: 2;
 }

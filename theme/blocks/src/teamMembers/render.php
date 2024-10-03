@@ -37,7 +37,7 @@ if ($loop->have_posts()) : ?>
 							</div>
 							<div class="absolute px-4 content bottom-5 left-2">
 								<h4 class="mt-4 text-white text-title-4 item__name"><?php the_title(); ?></h4>
-								<p class="mt-2 text-sm text-white uppercase item__position"><?php the_field('position'); ?></p>
+								<p class="mt-2 text-sm text-white uppercase item__position"><?php echo wp_kses_post(get_field('position')); ?></p>
 							</div>
 						</a>
 					</div>

@@ -24,7 +24,7 @@
 
 	?>
 		<div class="relative text-white bg-center bg-no-repeat bg-cover hero__page" style="background-image:url(<?php echo $background; ?>)">
-			<div class="absolute top-0 left-0 bg-black bg-opacity-40 overlay size-full"></div>
+			<div class="absolute top-0 left-0 bg-black bg-opacity-50 overlay size-full"></div>
 			<div class="container px-4">
 				<div class="flex items-center justify-center h-80">
 					<h1 class="hero__page__title"><?php the_title(); ?></h1>
