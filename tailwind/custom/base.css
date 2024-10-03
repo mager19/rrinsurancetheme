@@ -250,3 +250,20 @@ body {
 		@apply text-white;
 	}
 }
+
+@keyframes growshrink {
+	20%,
+	75% {
+		transform: translateX(5px);
+	}
+
+	50% {
+		transform: translateX(-15px);
+	}
+}
+
+.hero__page__title {
+	animation-duration: 5s;
+	animation-name: growshrink;
+	animation-iteration-count: 2;
+}

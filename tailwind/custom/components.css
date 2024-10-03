@@ -43,7 +43,11 @@ h6 {
 		@apply absolute h-3 bg-opacity-40 bottom-2 left-1 bg-rrRed;
 		content: "";
 		display: block;
-		width: 105%;
+		width: 90%;
+
+		@screen lg {
+			width: 105%;
+		}
 	}
 
 	&--dark {
