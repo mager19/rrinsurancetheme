@@ -603,13 +603,13 @@ body .n2-ss-slide-background-image .skip-lazy {
   height: 3rem !important;
   border-radius: 0.375rem !important;
   --tw-border-opacity: 1 !important;
-  border-color: rgb(203 213 225 / var(--tw-border-opacity)) !important;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity)) !important;
 }
 
 .wpforms-container form textarea {
   border-radius: 0.375rem !important;
   --tw-border-opacity: 1 !important;
-  border-color: rgb(203 213 225 / var(--tw-border-opacity)) !important;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity)) !important;
 }
 
 .wpforms-container form button {

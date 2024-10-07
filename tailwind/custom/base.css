@@ -274,11 +274,11 @@ body {
 		@apply p-6 rounded-l bg-slate-100;
 
 		input {
-			@apply h-12 rounded-md border-slate-300 !important;
+			@apply h-12 rounded-md border-slate-200 !important;
 		}
 
 		textarea {
-			@apply rounded-md border-slate-300 !important;
+			@apply rounded-md border-slate-200 !important;
 		}
 
 		button {
