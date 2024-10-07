@@ -268,3 +268,21 @@ body {
 	animation-name: growshrink;
 	animation-iteration-count: 2;
 }
+
+.wpforms-container {
+	form {
+		@apply p-6 rounded-l bg-slate-100;
+
+		input {
+			@apply h-12 rounded-md border-slate-300 !important;
+		}
+
+		textarea {
+			@apply rounded-md border-slate-300 !important;
+		}
+
+		button {
+			@apply bg-rrRed text-white rounded-md w-full !important;
+		}
+	}
+}
