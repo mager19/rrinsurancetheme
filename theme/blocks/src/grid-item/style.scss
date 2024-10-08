@@ -1,0 +1,18 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-rrinsurance-grid-item {
+	@apply rounded-tl-xl rounded-tr-xl overflow-hidden;
+
+	figure{
+		@apply h-[350px] w-full;
+
+		img{
+			@apply h-full w-full object-cover;
+		}
+	}
+}

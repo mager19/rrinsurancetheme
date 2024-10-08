@@ -1,0 +1,10 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-rrinsurance-grid-item {
+	@apply p-2;
+	border: 1px dotted #4d4d4d;
+}
